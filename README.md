@@ -6,7 +6,7 @@ This guide explains how to set up and run the project locally.
 - PHP >= 8.1
 - Composer
 - Node.js & npm
-- SQLite (already included in the repo)
+- SQLite
 
 ## Installation
 
@@ -23,6 +23,7 @@ This guide explains how to set up and run the project locally.
    ```bash
    cp .env.example .env
    php artisan key:generate
+   touch database/database.sqlite
    
    DB_CONNECTION=sqlite
 
