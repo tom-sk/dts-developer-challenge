@@ -35,7 +35,7 @@ class TaskController extends Controller
     {
         $task->delete();
 
-        return response()->json();
+        return response()->noContent();
     }
 
     public function showTemplate(Task $task)
